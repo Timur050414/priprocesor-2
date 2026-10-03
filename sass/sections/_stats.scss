@@ -1,0 +1,11 @@
+@use "../base/variables" as *;
+@use "../utils/placeholder" as *;
+
+.stats {
+  @extend %flex-box;
+  
+  &__card {
+    @extend %card-base;
+    flex: 1;
+  }
+}

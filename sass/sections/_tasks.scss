@@ -1,0 +1,11 @@
+@use "../base/variables" as *;
+@use "../utils/placeholder" as *;
+
+.tasks {
+  margin-top: 20px;
+
+  &__item {
+    @extend %card-base;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+@use "../base/variables" as *;
+
+.sidebar {
+  width: 200px;
+  background-color: $white;
+  padding: 20px;
+  border-radius: 8px;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $text-main;
+    font-size: 15px;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

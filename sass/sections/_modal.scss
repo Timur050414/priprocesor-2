@@ -1,0 +1,14 @@
+@use "../base/variables" as *;
+@use "../utils/placeholder" as *;
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  &__content {
+    @extend %card-base;
+    width: 300px;
+    margin: 100px auto;
+  }
+}

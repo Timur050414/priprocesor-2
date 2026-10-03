@@ -1,0 +1,11 @@
+@use "../base/variables" as *;
+%flex-box {
+  display: flex;
+  gap: 20px;
+}
+
+%card-base {
+  background-color: $white;
+  padding: 15px;
+  border-radius: 8px;
+}

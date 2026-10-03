@@ -1,0 +1,22 @@
+@use "variables" as *;
+
+body {
+  background-color: $bg-main;
+  color: $text-main;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.dashboard-layout {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.section-title {
+  margin-bottom: 12px;
+  font-size: 18px;
+}

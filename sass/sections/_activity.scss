@@ -1,0 +1,26 @@
+@use "../base/variables" as *;
+@use "../utils/placeholder" as *;
+
+.activity {
+  margin-top: 25px;
+
+  &__table {
+    @extend %card-base;
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid $border-color;
+    }
+
+    th {
+      font-weight: bold;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@use "./base/reset";
+@use "./base/variables";
+@use "./base/container";
+@use "./base/common";
+
+@use "./utils/mixins";
+@use "./utils/placeholder";
+
+@use "./sections/header";
+@use "./sections/sidebar";
+@use "./sections/stats";
+@use "./sections/tasks";
+@use "./sections/activity";
+@use "./sections/modal";
+@use "./sections/footer";

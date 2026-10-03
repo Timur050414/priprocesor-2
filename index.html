@@ -5,66 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./style/main.min.css">
 </head>
 
 <body>
-    <div class="dashboard">
-        <header class="header">
-            <div class="header__logo">Dashboard</div>
-            <div class="notifications">
-                <span class="notifications__badge">3</span>
-            </div>
-        </header>
-
-        <aside class="sidebar">
-            <nav class="sidebar__nav">
-                <a href="#" class="sidebar__link">Головна</a>
-                <a href="#" class="sidebar__link">Завдання</a>
-            </nav>
-        </aside>
-
-        <main class="dashboard__content">
-            <section class="stats">
-                <div class="stats__card">Статистика 1</div>
-                <div class="stats__card">Статистика 2</div>
-            </section>
-
-            <section class="tasks">
-                <div class="tasks__item">Завдання 1</div>
-                <div class="tasks__item">Завдання 2</div>
-            </section>
-
-            <section class="activity">
-                <table class="activity__table">
-                    <thead>
-                        <tr>
-                            <th>Дія</th>
-                            <th>Час</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Вхід у систему</td>
-                            <td>10:00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <div class="u-full-width u-text-center">
-                <button class="btn btn--primary">Основна кнопка</button>
-                <button class="btn btn--secondary">Вторинна кнопка</button>
-            </div>
-        </main>
-
-        <div class="modal">
-            <div class="modal__content">
-                <h2>Модальне вікно</h2>
-                <p class="u-visually-hidden">Прихований текст для скрінрідерів</p>
-            </div>
+    <!-- Хедер -->
+    <header class="header">
+        <div class="logo">
+            <h2>Dashboard</h2>
+        </div>
+        <div class="user-profile">
+            <span>Адміністратор</span>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="dashboard-layout">
+    
+            <!-- Сайдбар -->
+            <aside class="sidebar">
+                <nav class="sidebar__nav">
+                    <ul class="sidebar__list">
+                        <li><a href="#" class="sidebar__link">Головна</a></li>
+                        <li><a href="#" class="sidebar__link">Статистика</a></li>
+                        <li><a href="#" class="sidebar__link">Завдання</a></li>
+                        <li><a href="#" class="sidebar__link">Налаштування</a></li>
+                    </ul>
+                </nav>
+            </aside>
+    
+            <!-- Основний контент -->
+            <main class="main-content">
+    
+                <!-- Секція статистики -->
+                <section class="stats">
+                    <div class="stats__card">
+                        <h3>Користувачі</h3>
+                        <p>1,240</p>
+                    </div>
+                    <div class="stats__card">
+                        <h3>Прибуток</h3>
+                        <p>$12,450</p>
+                    </div>
+                    <div class="stats__card">
+                        <h3>Замовлення</h3>
+                        <p>85</p>
+                    </div>
+                </section>
+    
+                <!-- Секція завдань -->
+                <section class="tasks">
+                    <h2 class="section-title">Сітка завдань</h2>
+                    <div class="tasks__item">Оновити дизайн головної сторінки</div>
+                    <div class="tasks__item">Налаштувати базу даних</div>
+                    <div class="tasks__item">Провести тестування адаптивності</div>
+                </section>
+    
+                <!-- Секція останньої активності -->
+                <section class="activity">
+                    <h2 class="section-title">Останні дії</h2>
+                    <table class="activity__table">
+                        <thead>
+                            <tr>
+                                <th>Користувач</th>
+                                <th>Дія</th>
+                                <th>Час</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Олексій</td>
+                                <td>Вхід у систему</td>
+                                <td>10:45</td>
+                            </tr>
+                            <tr>
+                                <td>Марія</td>
+                                <td>Створення завдання</td>
+                                <td>11:20</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+    
+            </main>
         </div>
     </div>
+    
+    <!-- Футер -->
+    <footer class="footer">
+        <p>&copy; 2026 Dashboard Panel. Усі права захищені.</p>
+    </footer>
 </body>
 
 </html>
